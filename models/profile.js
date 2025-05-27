@@ -12,6 +12,7 @@ const profileSchema = new mongoose.Schema({
   portfolios: Array,
   socialLinks: Array,
   experiences: Array
+  songs: Array
 });
 
 
