@@ -11,7 +11,7 @@ const profileSchema = new mongoose.Schema({
   skills: Array,
   portfolios: Array,
   socialLinks: Array,
-  experiences: Array
+  experiences: Array,
   songs: Array
 });
 
