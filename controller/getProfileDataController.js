@@ -3,7 +3,6 @@ const Profile = require('../models/profile');
 exports.getProfile = async (req, res) => {
   try {
     const profile = await Profile.findOne().lean(); // returns plain JS object
-    
     if (!profile) {
       return res.status(404).send({ message: 'Profile not found' });
     }

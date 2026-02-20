@@ -19,6 +19,7 @@ exports.sentEmailConnectWithMe = async (req, res) => {
     };
 
 
+
     console.log(req.body)
     let transporter = nodemailer.createTransport(config);
 
@@ -83,7 +84,7 @@ exports.sentEmailConnectWithMe = async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Error in sending email:', error);
+    console.log('Error in sending email:', error);
     res.status(500).json({ message: 'An error occurred during email sending.' });
   }
 };
